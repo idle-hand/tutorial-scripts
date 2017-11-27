@@ -1,0 +1,41 @@
+class Account:
+
+    account_type = 'Basic'
+
+    def __init__ (self, name, balance):
+        self.name = name
+        self.balance = balance
+        
+   
+
+    def deposit(self, value):
+        self.balance += value
+
+    def withdraw(self, value):
+        self.balance -+ value
+
+# class methods are just functions that have been
+# defined within the scope of the class.
+
+bank = Account('HSBC', 2000)
+ban2 = Account('Tronto-Dominion', 1000)
+
+
+# class is called like a function - Account() - !
+# this creates a new object based on the class
+
+bank.deposit(1000)
+
+print(bank.name,bank.balance)
+print(ban2.name,ban2.balance)
+
+ban2.deposit(750.55)
+
+print()
+print()
+
+print(bank.name,bank.balance)
+print(ban2.name,ban2.balance)
+
+
+
