@@ -25,6 +25,8 @@ class SchoolMember:
 ##the base class SchoolMember - you have to explicity call it yourself.
 ##
 
+# in constrast, if we have not defined an __init__ method in the subclass
+# python will call the constructor of the base class automatically.
 
 
 
